@@ -1,3 +1,3 @@
-requests==2.18.4
-CloudFlare==2.3.0
-PyYAML==5.1.2
+requests
+CloudFlare
+PyYAML
