@@ -1,27 +1,20 @@
 CloudFlare:
   mail: yumusb@foxmail.com
-  token: 
-SMTP:
-  #SMTP服务器
-  host: 
-  #密码
-  pass: 
-  #接受者
-  receivers: 
-  #用户
-  user: 
+  token: yourtoken
 #将要监控的域名记录
 domain:
-  name: 09.nu
+  name: yourdomain.com
   zone:
-  - '@'
+  - subdomain: 'www'
+    type: http
+    port: 80
 #主用加备用记录 都写在这里
 records:
 - content: yumusb.coding.me 
-  name: '@'
+  name: 'www'
   type: CNAME
   proxied: false
 - content: yumusb.github.io
-  name: '@'
+  name: 'www'
   type: CNAME
   proxied: false
